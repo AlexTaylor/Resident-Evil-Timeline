@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Resident Evil",
+    "entry_type": "Simple",
+    "scenario": "",
+    "release_date": "1996-03-23",
+    "reference_date": "1998-05-01",
+    "display_date": "July 1998",
+    "event": "",
+    "canon": "Canon",
+    "source": "Video game",
+    "availability": "PlayStation"
+  },
+  {
+    "title": "Resident Evil 2",
+    "entry_type": "Sectioned",
+    "scenario": "",
+    "release_date": "1998-08-23",
+    "reference_date": "1998-09-01",
+    "display_date": "",
+    "event": "",
+    "canon": "Canon",
+    "source": "Video game",
+    "availability": "PlayStation, GameCube"
+  },
+  {
+    "title": "Resident Evil 3",
+    "entry_type": "Sectioned",
+    "scenario": "",
+    "release_date": "1999-03-23",
+    "reference_date": "1998-08-29",
+    "display_date": "",
+    "event": "",
+    "canon": "Canon",
+    "source": "Video game",
+    "availability": "PlayStation, GameCube, Dreamcast"
+  },
+  {
+    "title": "Resident Evil Gaiden",
+    "entry_type": "",
+    "scenario": "",
+    "release_date": "2001-01-01",
+    "reference_date": "2000-02-11",
+    "display_date": "",
+    "event": "",
+    "canon": "Non-canon",
+    "source": "Video game",
+    "availability": "GameBoy Color"
+  },
+  {
+    "title": "Resident Evil Degeneration",
+    "entry_type": "",
+    "scenario": "",
+    "release_date": "2010-01-03",
+    "reference_date": "2002-01-01",
+    "display_date": "",
+    "event": "",
+    "canon": "Canon",
+    "source": "Movie",
+    "availability": "DVD"
+  }
+]
