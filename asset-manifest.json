@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Resident-Evil-Timeline/static/css/main.bfebd1f5.css",
+    "main.js": "/Resident-Evil-Timeline/static/js/main.755a6690.js",
+    "index.html": "/Resident-Evil-Timeline/index.html",
+    "main.bfebd1f5.css.map": "/Resident-Evil-Timeline/static/css/main.bfebd1f5.css.map",
+    "main.755a6690.js.map": "/Resident-Evil-Timeline/static/js/main.755a6690.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfebd1f5.css",
+    "static/js/main.755a6690.js"
+  ]
+}
