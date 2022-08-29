@@ -21,7 +21,7 @@ export default function App() {
       <Container maxWidth="lg">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/Resident-Evil-Timeline/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route path="about" element={<About />} />
               <Route path="*" element={<NoPage />} />

@@ -20,14 +20,10 @@ export default class ResultItem extends React.Component {
 
     return (
       <div>
-        <Card variant="outlined">
-          <Grid container spacing={2}>
-            <Grid item xs={12}>
-              <h2>{item.title} {releaseDate}</h2>
-              <p>{item.display_date}</p>
-              {availability}
-            </Grid>
-          </Grid>
+        <Card sx={{ my: 2, px: 2 }} variant="outlined">
+          <h2>{item.title} {releaseDate}</h2>
+          <p>{item.display_date}</p>
+          {availability}
         </Card>
       </div>
     );

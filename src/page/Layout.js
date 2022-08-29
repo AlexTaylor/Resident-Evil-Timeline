@@ -6,6 +6,9 @@ const Layout = () => {
   return (
     <>
       <Navbar />
+      <p>
+        <img src="/Resident-Evil-Timeline/images/title.png" alt="Resident Evil Timeline" className="banner" />
+      </p>
       <Outlet />
     </>
   );

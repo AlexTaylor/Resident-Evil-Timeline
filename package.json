@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "homepage": "https://AlexTaylor.github.io/Resident-Evil-Timeline",
   "private": true,
+  "author": {
+    "name": "Alex Taylor",
+    "email": "webmaster@evilresource.com",
+    "url": "https://www.evilresource.com/"
+  },
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -18,7 +23,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "public -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

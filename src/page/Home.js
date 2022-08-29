@@ -21,9 +21,6 @@ export default class Home extends React.Component {
   render() {
     return (
       <main>
-        <p>
-          <img src="images/banner.jpg" alt="Resident Evil Timeline" className="banner" />
-        </p>
         <FilterContainer data={timelineData} handleFilterSelection={this.handleFilterSelection} />
         <ResultContainer data={timelineData} filters={this.state.filters} />
       </main>

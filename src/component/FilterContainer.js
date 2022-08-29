@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
 import FilterEntryTypeInput from './FilterEntryTypeInput';
 import FilterSourceInput from './FilterSourceInput';
@@ -39,7 +40,7 @@ export default class FilterContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <Card sx={{ p: 2 }} variant="outlined">
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <FilterSourceInput options={this.sourceOptions} handleInput={this.handleFilterInput} />
@@ -62,7 +63,7 @@ export default class FilterContainer extends React.Component {
             <ToggleReleaseDateInput checked={true} handleInput={this.handleFilterInput} />
           </Grid>
         </Grid>
-      </div>
+      </Card>
     );
   }
 }
