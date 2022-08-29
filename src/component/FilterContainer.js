@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
 import FilterEntryTypeInput from './FilterEntryTypeInput';
 import FilterSourceInput from './FilterSourceInput';
 import FilterCanonInput from './FilterCanonInput';
@@ -55,14 +56,15 @@ export default class FilterContainer extends React.Component {
             <SortResultsInput options={this.sortResultsOptions} handleInput={this.handleFilterInput} />
           </Grid>
         </Grid>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+        <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
+          <Grid item xs={12} md="auto">
             <ToggleAvailabilityInput checked={true} handleInput={this.handleFilterInput} />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md="auto">
             <ToggleReleaseDateInput checked={true} handleInput={this.handleFilterInput} />
           </Grid>
         </Grid>
+        <Button variant="outlined" color="secondary">Execute</Button>
       </Card>
     );
   }

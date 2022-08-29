@@ -7,10 +7,15 @@ import Layout from "./page/Layout";
 import Home from "./page/Home";
 import About from "./page/About";
 import NoPage from "./page/NoPage";
+import { blue, grey, red,  } from "@mui/material/colors";
 
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
+    primary: grey,
+    secondary: {
+      main: '#ed1e1c',
+    },
   },
 });
 
