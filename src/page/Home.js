@@ -1,4 +1,6 @@
 import * as React from 'react';
+import Container from '@mui/material/Container';
+import Navbar from "../Navbar";
 import FilterContainer from '../component/FilterContainer';
 import ResultContainer from '../component/ResultContainer';
 import './Home.css';
@@ -23,10 +25,18 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <main>
-        <FilterContainer data={timelineData} handleFilterSelection={this.handleFilterSelection} />
-        <ResultContainer data={timelineData} show={this.resultsTrigger} filters={this.state.filters} />
-      </main>
+      <>
+        <Navbar />
+        <Container maxWidth="lg">
+          <p>
+            <img src="/Resident-Evil-Timeline/images/title.png" alt="Resident Evil Timeline" className="banner" />
+          </p>
+          <main>
+            <FilterContainer data={timelineData} handleFilterSelection={this.handleFilterSelection} />
+            <ResultContainer data={timelineData} show={this.resultsTrigger} filters={this.state.filters} />
+          </main>
+        </Container>
+      </>
     );
   }
 }

@@ -1,8 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Layout from "./page/Layout";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./page/Home";
 import About from "./page/About";
 import NoPage from "./page/NoPage";
@@ -26,17 +25,15 @@ export default function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="/Resident-Evil-Timeline/" element={<Layout />}>
-            <Route index element={ <Navigate to="home" /> } />
-            <Route path="home" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
+          <Route index element={ <Navigate to="home" /> } />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NoPage />} />
         </Routes>
-      </BrowserRouter>
-    </ThemeProvider>
+      </HashRouter>
+    </ThemeProvider >
   );
 }
 

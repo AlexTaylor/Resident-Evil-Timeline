@@ -9,12 +9,12 @@ function Navbar() {
       <Container sx={{ py: 1 }} maxWidth="lg">
         <List className="nav">
           <ListItem disablePadding>
-            <NavLink to="home">
+            <NavLink to="/home">
               Home
             </NavLink>
           </ListItem>
           <ListItem disablePadding>
-            <NavLink to="about">
+            <NavLink to="/about">
               About
             </NavLink>
           </ListItem>
