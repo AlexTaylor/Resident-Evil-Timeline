@@ -6,7 +6,6 @@ import Layout from "./page/Layout";
 import Home from "./page/Home";
 import About from "./page/About";
 import NoPage from "./page/NoPage";
-import { grey, red } from "@mui/material/colors";
 
 const darkTheme = createTheme({
   palette: {
@@ -29,7 +28,7 @@ export default function App() {
       <CssBaseline />
       <BrowserRouter>
         <Routes>
-          <Route path="/Resident-Evil-Timeline" element={<Layout />}>
+          <Route path="/Resident-Evil-Timeline/" element={<Layout />}>
             <Route index element={ <Navigate to="home" /> } />
             <Route path="home" element={<Home />} />
             <Route path="about" element={<About />} />
