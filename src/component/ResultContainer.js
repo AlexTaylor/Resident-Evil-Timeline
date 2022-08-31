@@ -80,13 +80,13 @@ export default class ResultContainer extends React.Component {
     let results = this.getResults();
     console.log('Results:', results);
     return (
-      <div>
+      <>
         {results.map(function (item, i) {
           return <div className={'row'} key={i}>
             {<ResultItem key={i} item={item} />}
           </div>;
         })}
-      </div>
+      </>
     );
   }
 }
