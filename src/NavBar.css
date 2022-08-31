@@ -1,5 +1,5 @@
 .nav {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   padding: 0;
   font-size: 0.9rem;

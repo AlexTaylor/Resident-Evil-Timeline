@@ -5,6 +5,8 @@ import './Home.css';
 import timelineData from './../data/db.json';
 
 export default class Home extends React.Component {
+  resultsTrigger = false;
+
   constructor(props) {
     super(props);
     this.state = { filters: {} };
@@ -16,13 +18,14 @@ export default class Home extends React.Component {
     this.setState({
       filters: values
     });
+    this.resultsTrigger = true;
   }
 
   render() {
     return (
       <main>
         <FilterContainer data={timelineData} handleFilterSelection={this.handleFilterSelection} />
-        <ResultContainer data={timelineData} filters={this.state.filters} />
+        <ResultContainer data={timelineData} show={this.resultsTrigger} filters={this.state.filters} />
       </main>
     );
   }

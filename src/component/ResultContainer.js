@@ -12,6 +12,11 @@ export default class ResultContainer extends React.Component {
     let filters = this.props.filters;
     let results = this.props.data;
 
+    // Quit if we are not instructed to show results.
+    if (!this.props.show) {
+      return [];
+    }
+
     // Set defaults.
     if (!filters.hasOwnProperty('filter_entry_type')) {
       filters.filter_entry_type = 'Simple';

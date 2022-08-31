@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Container from '@mui/material/Container';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
@@ -9,20 +10,20 @@ import './NavBar.css';
 function Navbar() {
   return (
     <AppBar position="static">
-      <Toolbar>
+      <Container sx={{ py: 1 }} maxWidth="lg">
         <List className="nav">
           <ListItem disablePadding>
-            <NavLink to="/Resident-Evil-Timeline/">
+            <NavLink to="home">
               Home
             </NavLink>
           </ListItem>
           <ListItem disablePadding>
-            <NavLink to="/Resident-Evil-Timeline/about/">
+            <NavLink to="about">
               About
             </NavLink>
           </ListItem>
         </List>
-      </Toolbar>
+      </Container>
     </AppBar>
   );
 }

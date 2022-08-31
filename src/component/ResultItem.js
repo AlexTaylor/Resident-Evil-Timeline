@@ -1,6 +1,5 @@
 import * as React from 'react';
-import Grid from '@mui/material/Grid';
-import { Card } from '@mui/material';
+import { Typography, Card } from '@mui/material';
 
 export default class ResultItem extends React.Component {
   render() {
@@ -15,17 +14,19 @@ export default class ResultItem extends React.Component {
     // Release date output.
     let releaseDate;
     if (item.filters.show_release_date) {
-      releaseDate = <span>{item.release_date}</span>
+      releaseDate = <Typography variant="subtitle1" component="small">({item.release_date})</Typography>
     }
 
     return (
-      <div>
-        <Card sx={{ my: 2, px: 2 }} variant="outlined">
-          <h2>{item.title} {releaseDate}</h2>
+      <>
+        <Card sx={{ my: 2, px: 2 }}>
+          <Typography sx={{ mt: 2 }} variant="h5" component="h2">
+            {item.title} {releaseDate}
+          </Typography>
           <p>{item.display_date}</p>
           {availability}
         </Card>
-      </div>
+      </>
     );
   }
 }

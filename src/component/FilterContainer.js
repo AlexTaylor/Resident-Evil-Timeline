@@ -32,6 +32,10 @@ export default class FilterContainer extends React.Component {
     console.log('props', this.props);
 
     this.filterValues[filter] = value;
+  }
+
+  handleExecute(event) {
+    console.log('props!', this.props);
     this.props.handleFilterSelection(this.filterValues);
   }
 
@@ -56,7 +60,7 @@ export default class FilterContainer extends React.Component {
             <SortResultsInput options={this.sortResultsOptions} handleInput={this.handleFilterInput} />
           </Grid>
         </Grid>
-        <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
+        <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">
           <Grid item xs={12} md="auto">
             <ToggleAvailabilityInput checked={true} handleInput={this.handleFilterInput} />
           </Grid>
@@ -64,7 +68,11 @@ export default class FilterContainer extends React.Component {
             <ToggleReleaseDateInput checked={true} handleInput={this.handleFilterInput} />
           </Grid>
         </Grid>
-        <Button variant="outlined" color="secondary">Execute</Button>
+        <Grid sx={{ mt: 1 }} container spacing={2} direction="row" justifyContent="center" alignItems="center">
+          <Grid item xs="auto">
+            <Button variant="outlined" color="secondary" onClick={() => { this.handleExecute(); }}>Get results</Button>
+          </Grid>
+        </Grid>
       </Card>
     );
   }
